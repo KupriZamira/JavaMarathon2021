@@ -13,7 +13,7 @@ public class Task2 {
         if (a >= b){
             System.out.println("a >= b некорректный ввод");
         }
-        for (int a1 = a; a1 < b; a1++) {
+        for (int a1 = a + 1; a1 < b; a1++) {
             if (a1 % 5 == 0 && a1 % 10 != 0) {
                 System.out.print(a1 + " ");
             }
