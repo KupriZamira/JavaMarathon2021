@@ -24,12 +24,10 @@ public class Motorbike {
     public void info(){
         System.out.println("Это мотоцикл");
     }
+
     int yearOfDifference(int inputYear){
         int difference = yearOfIssueMotorbike - inputYear;
-        if (difference < 0){
-            difference = - difference;
-        }
-        return difference;
+        return Math.abs(difference);
     }
 }
 

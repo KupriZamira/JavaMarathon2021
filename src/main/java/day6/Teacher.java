@@ -5,13 +5,6 @@ import java.util.Random;
 public class Teacher {
     private String nameTeachers;
     private String subject;
-    Random random = new Random();
-    String rating;
-    String ratingNeud = "неудовлетворительно";
-    String ratingUdov = "удовлетворительно";
-    String ratingHorosho = "хорошо";
-    String ratingOtlichno = "отлично";
-
 
     public Teacher(String nameTeachers, String subject){
         this.nameTeachers = nameTeachers;
@@ -31,6 +24,9 @@ public class Teacher {
         return subject;
     }
     public void evaluate(String nameStudents){
+        Random random = new Random();
+        String rating;
+
         int i = random.nextInt(5) + 1;
         int min = 2;
         if(min > i){
@@ -38,13 +34,13 @@ public class Teacher {
         }
 
         if (i == 2){
-           rating = ratingNeud;
+           rating = "неудовлетворительно";
        } else if (i == 3){
-            rating = ratingUdov;
+            rating = "удовлетворительно";
         } else if (i == 4){
-            rating = ratingHorosho;
+            rating = "хорошо";
         } else {
-            rating = ratingOtlichno;
+            rating = "отлично";
         }
         System.out.println(nameTeachers + " оценил(а) студента " + nameStudents + " " + "по предмету " + subject + " на оценку: " + rating);
     }
