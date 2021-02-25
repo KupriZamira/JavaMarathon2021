@@ -7,13 +7,17 @@ public class Task2 {
             Player player1 = new Player(randomCount(90, 100));
             player1.getStamina();
             player1.run();
-            player1.getStamina();
+        player1.getStamina();
+
+
         Player player2 = new Player(randomCount(90, 100));
         Player player3 = new Player(randomCount(90, 100));
         Player player4 = new Player(randomCount(90, 100));
         Player player5 = new Player(randomCount(90, 100));
         Player player6 = new Player(randomCount(90, 100));
-        player6.getCountPlayers();
+        Player player7 = new Player(randomCount(90, 100));
+
+        player4.getCountPlayers();
         player1.info();
     }
 
